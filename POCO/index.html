@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/poco.jfif" type="image/x-icon">
+    <title>POCO</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" id="menu" alt="menu-img">
+            <img class="img1" src="images/poco.jfif" alt="logo" >
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Location</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+         <div class="phone-container">
+             <img src="images/phone.png" class="phone">
+             <img src="images/display.png" class="display" id="display">
+         </div>
+
+
+         <div class="text-container">
+             <h1>Latest<br/>Poco Phones</h1> 
+             <p>Poco has been an outstanding brand with the Great cameras, Great speaker And best of all Great processeor</p>
+             <a href="">Check all devices</a>
+             <div class="control">
+                 <p>Good Rating</p>
+                 <div class="line">
+                     <span>88%</span>
+                 </div>
+                 <p>Bad</p>
+             </div>
+         </div> 
+
+    </div>
+<script>
+    var btn = document.getElementById("btn");
+    var display = document.getElementById("display");
+
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        display.classList.toggle("on")
+    }
+</script>
+
+</body>
+</html>
